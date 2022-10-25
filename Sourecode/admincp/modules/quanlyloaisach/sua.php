@@ -1,9 +1,8 @@
-
 <?php
 // $MaLoaiSach = $_POST['MaLoaiSach'];
 $MaLoaiSach = isset($_REQUEST["MaLoaiSach"]) ? $_REQUEST["MaLoaiSach"] : 0;
 
-$sql=" select * from LoaiSach where MaLoaiSach='$MaLoaiSach'";
+$sql=" select * from loaisach where MaLoaiSach='$MaLoaiSach'";
 $run=mysqli_query($con,$sql);
 $dong=mysqli_fetch_array($run);
 ?>
@@ -11,10 +10,8 @@ $dong=mysqli_fetch_array($run);
 th{
 	background:#999;
 	}
-	
 }
 	
-
 </style>
 <form action="modules/quanlyloaisach/xuly.php?id=<?php echo $MaLoaiSach?>" method="post" enctype="multipart/form-data">
 <table width="100%" border="1">
@@ -23,7 +20,7 @@ th{
   </tr>
   <tr>
     <td height="59">Tên Loại Sách</td>
-    <td><input type="text" name="TenLoaiSach" value="<?php echo $dong['TenLoaiSach']?>"></td>
+    <td><input type="text" name="TenLoaiSach" value="<?php echo $dong['TenLoaiSach'] ?>"></td>
   </tr>
   
   <tr>

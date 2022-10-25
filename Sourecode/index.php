@@ -17,11 +17,11 @@
 
 <div class="wrapper">
     <?php
-	        include('admincp/modules/config.php');
-			include('admincp/modules/header.php');
-			include('admincp/modules/menu.php');
-			include('admincp/modules/content.php');
-			include('admincp/modules/footer.php');
+	        include('modules/config.php');
+			include('modules/header.php');
+			include('modules/menu.php');
+			include('modules/content.php');
+			include('modules/footer.php');
 
  ?>   
 </div>
@@ -29,7 +29,6 @@
 	}elseif(isset($_SESSION['dangnhap']) && $_SESSION['quyen_truy_cap'] == 0){
 		?>
 		      <div class="wrapper">
-				<?php $_SESSION['quyen_truy_cap'][0] ?>
     <?php
 	        include('modules/config.php');
 			include('modules/header.php');

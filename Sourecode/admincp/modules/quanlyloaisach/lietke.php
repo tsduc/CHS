@@ -26,7 +26,7 @@ while($dong=mysqli_fetch_array($run)){
  
     <td><?php echo $dong['TenLoaiSach'];?></td>
     
-    <td width="11%"><a href="index.php?quanly=quanlyloaisach&ac=sua&MaLoaiSach=<?php echo $dong['MaLoaiSach']?>">Sửa</td>
+    <td width="11%"><a href="index.php?quanly=quanlyloaisach&ac=sua&id=<?php echo $dong['MaLoaiSach']?>">Sửa</td>
     <td width="13%"><a href="modules/quanlyloaisach/xuly.php?id=<?php echo $dong['MaLoaiSach'] ?>">Xóa</a></td>
   </tr>
 <?php

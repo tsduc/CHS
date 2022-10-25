@@ -1,8 +1,8 @@
 
 <?php
 $sql=" select * from nhaxb where MaNXB='$_GET[MaNXB]'";
-$run=mysql_query($sql);
-$dong=mysql_fetch_array($run);
+$run=mysqli_query($con,$sql);
+$dong=mysqli_fetch_array($run);
 ?>
 <style>
 th{

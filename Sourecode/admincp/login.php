@@ -6,10 +6,10 @@
 		  $username=$_POST['username'];
 		  $password=$_POST['password'];
 		  $sql="select * from admin where username='$username'and password='$password' limit 1";
-		  $query=mysqli_query($sql);
+		  $query=mysqli_query($con,$sql);
 		  $nums=mysqli_num_rows($query);
 		  if($nums>0){
-			  $row=mysql_fetch_array($query);
+			  $row=mysqli_fetch_array($con,$query);
 			  
 			  $_SESSION['dangnhap']=$username;
 			 session_start();

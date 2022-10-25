@@ -38,7 +38,7 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td><div align="right"><a href="login.php" target=""><img src="image/dangnhap.jpg" width="90" height="30"  /></a></div></td>
-      <td><div align="right"><a href="/CHSS/Sourecode/modules/right/dangki.php" target=""><img src="image/taotaikhoan.jpg" width="90" height="30" /></a></div></td>
+      <td><div align="right"><a href="dangki.php" target=""><img src="image/taotaikhoan.jpg" width="90" height="30" /></a></div></td>
     </tr>
     <tr>
       <td>&nbsp;</td>

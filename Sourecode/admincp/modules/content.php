@@ -5,17 +5,17 @@
 	   }else{
 		   $tam='';	   
 	   }if($tam=='quanlyloaisach'){
-		   include('admincp/modules/quanlyloaisach/main.php');
+		   include('modules/quanlyloaisach/main.php');
 	   }if($tam=='quanlychitietsach'){
-		   include('admincp/modules/quanlychitietsach/main.php');
+		   include('modules/quanlychitietsach/main.php');
 	   }if($tam=='quanlynguoidung'){
-		   include('admincp/modules/quanlynguoidung/main.php');
+		   include('modules/quanlynguoidung/main.php');
 	   }
 	   if($tam=='quanlynxb'){
-		   include('admincp/modules/quanlynxb/main.php');
+		   include('modules/quanlynxb/main.php');
 	   }
 	   if($tam=='quanlytacgia'){
-		   include('admincp/modules/quanlytacgia/main.php');
+		   include('modules/quanlytacgia/main.php');
 	   }
 	   ?>     
        

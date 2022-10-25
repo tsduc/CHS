@@ -9,13 +9,14 @@
 		  $query=mysqli_query($con,$sql);
 		  $nums=mysqli_num_rows($query);
 		  if($nums>0){
-			  $row=mysqli_fetch_array($query, MYSQLI_ASSOC);
+			  $row=mysqli_fetch_array($query);
 			  
 			  $_SESSION['dangnhap']=$username;
+			 session_start();
 			  header('location:index.php');
-			  $_SESSION['quyen_truy_cap'] = $row["quyen_truy_cap"];	
-			  $_SESSION['hoten'] = $row["hoten"];	
-			  $_SESSION['id'] = $row["id_user"];  	  
+			  $_SESSION['quyen_truy_cap'] = $row[quyen_truy_cap];	
+			  $_SESSION['hoten'] = $row[hoten];	
+			  $_SESSION['id'] = $row[id_user];  	  
 			  }else{
 		      echo"<script> alert('Tài khoản không đúng!')</script>";
 		      }		  

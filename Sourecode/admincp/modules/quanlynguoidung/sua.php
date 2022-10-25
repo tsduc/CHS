@@ -1,8 +1,8 @@
 
 <?php
      $sql="select * from admin where id_user='$_GET[id_user]'";
-	 $run=mysql_query($sql);
-	 $dong= mysql_fetch_array($run);
+	 $run=mysqli_query($con,$sql);
+	 $dong= mysqli_fetch_array($run);
 ?>
 
 <form action="modules/quanlynguoidung/xuly.php?id_user=<?php echo $dong['id_user']?>" method="post" enctype="multipart/form-data">
